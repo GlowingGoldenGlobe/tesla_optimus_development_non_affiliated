@@ -13,8 +13,7 @@ body {
     color: white;
     width: 100%;
     height: 100%;
-    text-align: center;
-    overflow: none;
+    /*overflow: none;*/
     margin: 0 auto;
 }
 .class_textarea_1 {
@@ -169,7 +168,7 @@ function bodyWandH01() {
         var num_w = Number(w01);
         var new_w = num_w*.8;
         var num_h = Number(h01);
-        var new_h = num_h * 0.8;
+        var new_h = num_h * 4;
         //w01 = w01 + "px";
         //h01 = h01 + "px";
         new_h_px = new_h + "px";
@@ -178,7 +177,7 @@ function bodyWandH01() {
         var split_h = str_h.split("px");
         var str_h_2 = split_h[0];
         var num_h_2 = Number(str_h_2);
-        var new_h_2 = num_h_2 * 0.8;
+        var new_h_2 = num_h_2 * 4;
         new_h_px = new_h_2 + "px";
     }
     //document.body.style.width = w01;    
