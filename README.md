@@ -1,0 +1,6 @@
+# tesla_optimus_development_non_affiliated
+# Not affiliated with Tesla Inc.  Tesla Humanoid Optimus - A list of improvements which ought to be made on the robot; tasks regarding developing the robot, Optimus.
+# URL for html file (Robot_Specs_Improvements) of this repository:
+
+
+# https://glowinggoldenglobe.github.io/tesla_optimus_development_non_affiliated/Robot_Specs_Improvements.html
