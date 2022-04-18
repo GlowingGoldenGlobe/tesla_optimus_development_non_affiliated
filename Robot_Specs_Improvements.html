@@ -20,7 +20,7 @@ body {
   background-color: white;
   color: black;
   width: 80%;
-  height: 80%;
+  height: 600px;
   margin-left: 10%;
   font-size: 20px;
   border: 3px outset black;
@@ -29,7 +29,7 @@ body {
 </head>
 
 <body>
-<textarea class="class_textarea_1" >
+<textarea id="id_textarea_1" class="class_textarea_1" >
 Tesla Optimus (tesla humanoid)
 
 How
@@ -149,7 +149,26 @@ Government Program
     pully connections
 </textarea>
 <script>
-
+function bodyWandH01() {
+    var windowWidth01 = window.innerWidth;
+    var w01 = windowWidth01.toString();
+    var windowHeight01 = window.innerHeight;
+    var h01 = windowHeight01.toString();
+    var test01 = h01.search("px");
+    test01 = Number(test01);
+    if(test01 == -1) {
+        num_w = Number(w01);
+        new_w = num_w*.8;
+        num_h = Number(h01);
+        new_h = num_h * 0.8;
+        //w01 = w01 + "px";
+        //h01 = h01 + "px";
+        new_h_px = new_h + "px";
+    }
+    //document.body.style.width = w01;    
+    document.getElementById("id_textarea_1").style.height = new_h_px;    
+}
+bodyWandH01();
 </script>
 </body>
 
