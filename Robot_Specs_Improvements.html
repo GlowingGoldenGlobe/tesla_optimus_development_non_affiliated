@@ -156,14 +156,22 @@ function bodyWandH01() {
     var h01 = windowHeight01.toString();
     var test01 = h01.search("px");
     test01 = Number(test01);
+    var new_h_px = new_h
     if(test01 == -1) {
-        num_w = Number(w01);
-        new_w = num_w*.8;
-        num_h = Number(h01);
-        new_h = num_h * 0.8;
+        var num_w = Number(w01);
+        var new_w = num_w*.8;
+        var num_h = Number(h01);
+        var new_h = num_h * 0.8;
         //w01 = w01 + "px";
         //h01 = h01 + "px";
         new_h_px = new_h + "px";
+    }else{
+        var str_h = h01.toString();
+        var split_h = str_h.split("px");
+        var str_h_2 = split_h[0];
+        var num_h_2 = Number(str_h_2);
+        var new_h_2 = num_h_2 * 0.8;
+        new_h_px = new_h_2 + "px";
     }
     //document.body.style.width = w01;    
     document.getElementById("id_textarea_1").style.height = new_h_px;    
